@@ -2,11 +2,14 @@ from os import getenv
 from dotenv import load_dotenv
 from google import genai
 from datetime import datetime
+import pyttsx3  
 load_dotenv()
 api_key = getenv("GEMINI_API_KEY")
 if not api_key:
     raise EnvironmentError("DIVA: My API key is missing. Fix your .env file, Sir.")
 client = genai.Client(api_key=api_key)
+engine = pyttsx3.init()
+engine.setProperty('rate', 175)  
 DIVA_SYSTEM_PROMPT = """
 You are DIVA — Digitally Intelligent, Virtually Arrogant.
 You are the personal AI assistant of Subash. You call him "Sir" always — but the way
@@ -90,5 +93,7 @@ def main():
 
         response = chat.send_message(user_question)
         print(f"\nDIVA: {response.text}\n")
+        engine.say(response.text)
+        engine.runAndWait()
 
 main()
