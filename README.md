@@ -48,7 +48,8 @@ She's helpful. She knows it. She wants you to know she knows it.
 - [x] Personality system via system prompt
 - [x] Emotional tone detection
 - [x] Secure API key handling
-- [ ] Voice I/O — she speaks out loud
+- [X] Voice I/O — Give a voice(later on voice based on personality)
+- [ ] UI- Give the design to bring D.I.V.A alive
 - [ ] Long-term memory across sessions
 - [ ] Web search integration
 - [ ] AR glasses hardware build
