@@ -58,7 +58,7 @@ She's helpful. She knows it. She wants you to know she knows it.
 
 ## Author
 
-Built by **Subash** — incoming BTech CSE student at RVCE Bangalore. DIVA is the first milestone of a long-term project to build a fully capable personal AI system.
+Built by **Subash** — BTech CSE student at RVCE Bangalore. DIVA is the first milestone of a long-term project to build a fully capable personal AI system.
 
 ---
 
